@@ -4,8 +4,8 @@ import { ArrowRight, FileText, Download, BarChart3, Database, Code } from "lucid
 import { motion, AnimatePresence } from "framer-motion";
 
 const roles = [
-  "Data Analyst",
-  "BI Developer",
+  "Data Engineer",
+  "BI Entusiast",
 ];
 
 export default function Hero() {
@@ -31,7 +31,7 @@ export default function Hero() {
       className="min-h-screen flex items-center justify-center relative pt-20 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
-        
+
         {/* Left text column */}
         <div className="lg:col-span-7 flex flex-col justify-center text-left">
           {/* Tagline */}
@@ -42,7 +42,7 @@ export default function Hero() {
             className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-50 border border-brand-indigo/15 text-sky-600 text-xs font-semibold uppercase tracking-wider w-max mb-6"
           >
             <BarChart3 className="w-4 h-4" />
-            Information Systems Student
+            Aspiring ETL & Data Warehouse Developer
           </motion.div>
 
           {/* Heading */}
@@ -84,7 +84,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-base sm:text-lg text-slate-600 max-w-xl mb-10 leading-relaxed"
           >
-            Information Systems student passionate about Business Intelligence, Data Analytics, and Software Development. I enjoy transforming raw data into meaningful insights through data warehouse design, ETL development, analytics dashboards, and web-based solutions.
+            Information Systems student passionate about Business Intelligence, Data Engineering. I enjoy transforming raw data into meaningful insights through data warehouse design, ETL development, analytics dashboards, and web-based solutions.
           </motion.p>
 
           {/* Buttons */}
@@ -147,7 +147,7 @@ export default function Hero() {
               />
               {/* Overlay gradient */}
               <div className="absolute inset-0 bg-gradient-to-t from-[#1a1020]/70 via-transparent to-transparent rounded-2xl pointer-events-none" />
-              
+
               {/* Floating badge */}
               <motion.div
                 animate={{ y: [0, -6, 0] }}
@@ -185,13 +185,13 @@ export default function Hero() {
             <div className="absolute inset-0 bg-gradient-to-tr from-sky-100 to-sky-200/40 blur-[60px] rounded-full -z-10" />
           </motion.div>
         </div>
-        
+
       </div>
-      
+
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 cursor-pointer z-10" onClick={() => handleScrollTo("#about")}>
         <span className="text-[10px] font-mono tracking-widest text-slate-500 uppercase">Scroll Down</span>
-        <motion.div 
+        <motion.div
           animate={{ y: [0, 6, 0] }}
           transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
           className="w-5 h-9 rounded-full border border-slate-200 p-1 flex justify-center"

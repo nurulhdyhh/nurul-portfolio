@@ -4,10 +4,10 @@ import { GraduationCap, Brain, Compass, BookOpen, Award } from "lucide-react";
 import { motion } from "framer-motion";
 
 const coursework = [
+  "Data Warehouse",
   "Business Intelligence",
-  "Data Analytics",
-  "Web Development",
-  "UI/UX Design",
+  "Database Systems",
+  "Data Mining"
 ];
 
 export default function About() {
@@ -33,7 +33,7 @@ export default function About() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight"
           >
-            Passionate about data-driven solutions
+            Turning raw data into structured insights
           </motion.h3>
         </div>
 
@@ -50,13 +50,19 @@ export default function About() {
           >
             <p className="text-slate-500 leading-relaxed text-sm sm:text-base">
               I am an Information Systems undergraduate student at{" "}
-              <span className="text-slate-900 font-semibold">UPN Veteran Jawa Timur</span> with a strong interest
-              in Business Intelligence, Data Analytics, and Software Development.
+              <span className="text-slate-900 font-semibold">UPN Veteran Jawa Timur</span> with a strong interest in Data Engineering, 
+              ETL, Data Warehousing, and Business Intelligence.
             </p>
             <p className="text-slate-500 leading-relaxed text-sm sm:text-base">
-              I have hands-on experience in designing Data Warehouses, developing ETL pipelines, creating
-              SQL-based analysis, and building interactive dashboards. I enjoy combining analytical thinking
-              and creativity to create impactful technology solutions.
+              Through my undergraduate thesis, I designed and implemented an end-to-end data warehouse for 
+              analyzing university community service performance. The project involved dimensional modeling, data cleansing and transformation, 
+              ETL workflow development, incremental loading, OLAP analysis, 
+              and dashboard integration using Pentaho Data Integration, PostgreSQL, Docker, Metabase, and Next.js.
+            </p>
+            <p className="text-slate-500 leading-relaxed text-sm sm:text-base">
+            I am currently expanding my data engineering foundation through hands-on projects while exploring AI automation and 
+            retrieval-based chatbot development using LangFlow and ChromaDB. 
+            I am seeking an entry-level opportunity where I can contribute to reliable data solutions and continue developing my technical skills.
             </p>
 
             {/* Quick credentials blocks */}
@@ -66,8 +72,8 @@ export default function About() {
                   <Brain className="w-5 h-5" />
                 </div>
                 <span className="text-xs font-semibold text-slate-900 mt-1">Mindset</span>
-                <span className="text-[11px] text-slate-500 leading-snug">Analytical & Creative</span>
-                <span className="text-[9px] text-slate-500 leading-tight">Combining logic with design thinking</span>
+                <span className="text-[11px] text-slate-500 leading-snug">Analytical & Curious</span>
+                <span className="text-[9px] text-slate-500 leading-tight">Understanding how data flows</span>
               </div>
               <div className="p-4 rounded-xl glass-card flex flex-col gap-2 hover:border-brand-indigo/20 transition-colors group">
                 <div className="p-2 rounded-lg bg-white border border-slate-200 text-brand-indigo group-hover:bg-brand-indigo/8 group-hover:border-brand-indigo/20 transition-all w-max">
@@ -75,15 +81,15 @@ export default function About() {
                 </div>
                 <span className="text-xs font-semibold text-slate-900 mt-1">Target Roles</span>
                 <span className="text-[11px] text-slate-500 leading-snug">Data & BI</span>
-                <span className="text-[9px] text-slate-500 leading-tight">Versatile across dev & data</span>
+                <span className="text-[9px] text-slate-500 leading-tight">Data Engineering</span>
               </div>
               <div className="p-4 rounded-xl glass-card flex flex-col gap-2 hover:border-brand-indigo/20 transition-colors group">
                 <div className="p-2 rounded-lg bg-white border border-slate-200 text-brand-indigo group-hover:bg-brand-indigo/8 group-hover:border-brand-indigo/20 transition-all w-max">
                   <Award className="w-5 h-5" />
                 </div>
                 <span className="text-xs font-semibold text-slate-900 mt-1">Strengths</span>
-                <span className="text-[11px] text-slate-500 leading-snug">BI + Software + Design</span>
-                <span className="text-[9px] text-slate-500 leading-tight">A unique multidisciplinary blend</span>
+                <span className="text-[11px] text-slate-500 leading-snug">End-to-End Project Building</span>
+                <span className="text-[9px] text-slate-500 leading-tight">From raw data to dashboards</span>
               </div>
             </div>
           </motion.div>
@@ -104,7 +110,7 @@ export default function About() {
                 </div>
                 <div>
                   <span className="text-sm font-bold text-slate-900 block">Education</span>
-                  <span className="text-[10px] text-slate-500 font-mono">2022 - Present</span>
+                  <span className="text-[10px] text-slate-500 font-mono">2022 - 2026</span>
                 </div>
               </div>
 
@@ -118,7 +124,7 @@ export default function About() {
                 {/* GPA Card */}
                 <div className="flex items-center gap-4 p-4 rounded-xl bg-white/70 border border-slate-200">
                   <div className="flex flex-col items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-br from-brand-indigo to-sky-400 text-slate-900">
-                    <span className="text-xl font-bold leading-none">3.88</span>
+                    <span className="text-xl font-bold leading-none">3.89</span>
                     <span className="text-[8px] font-mono opacity-75">/4.00</span>
                   </div>
                   <div>

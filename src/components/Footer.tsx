@@ -17,7 +17,7 @@ export default function Footer() {
               NURUL<span className="text-brand-indigo">.dev</span>
             </span>
             <p className="mt-3 text-sm text-slate-500 max-w-xs leading-relaxed">
-              Bridging the gap between software systems and data engineering pipelines to build scalable, data-driven applications.
+              Information Systems graduate focused on ETL, data warehousing, and business intelligence, while exploring AI automation and chatbot development.
             </p>
           </div>
 
@@ -27,7 +27,7 @@ export default function Footer() {
               Focus Areas
             </span>
             <div className="flex flex-wrap gap-2 mt-2 md:justify-center max-w-sm">
-              {["Management Trainee Data", "Business Intelligence", "Data Analyst"].map((role) => (
+              {["Data Engineering", "Data Analytics", "ETL Development", "AI Automation"].map((role) => (
                 <span
                   key={role}
                   className="px-2.5 py-1 text-xs rounded-full bg-white/70 border border-fuchsia-200/10 text-slate-500 font-medium"

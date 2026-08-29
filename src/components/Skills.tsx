@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Database, BarChart3, Code, Wrench, Layers, BrainCircuit } from "lucide-react";
+import { Database, BarChart3, Code, Wrench, Layers, BrainCircuit, BookOpen } from "lucide-react";
 import { motion } from "framer-motion";
 
 const categories = [
@@ -14,7 +14,7 @@ const categories = [
     id: "bi",
     title: "Business Intelligence",
     icon: BarChart3,
-    skills: ["Metabase", "Power BI", "Tableau"],
+    skills: ["Metabase", "Power BI"],
   },
   {
     id: "data",
@@ -26,7 +26,7 @@ const categories = [
     id: "programming",
     title: "Programming",
     icon: Code,
-    skills: ["Python", "Java", "PHP", "Dart"],
+    skills: ["Python", "Java", "PHP", "JavaScript"],
   },
   {
     id: "framework",
@@ -39,6 +39,12 @@ const categories = [
     title: "Tools",
     icon: Wrench,
     skills: ["Pentaho Data Integration", "Docker", "Git", "Figma"],
+  },
+  {
+    id: "Currently Learning",
+    title: "Currently Learning",
+    icon: BookOpen,
+    skills: ["Langflow:", "ChromaDB", "RAG", "Chatbot Workflows"],
   },
 ];
 
@@ -74,13 +80,13 @@ export default function Skills() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-slate-500 mt-4 max-w-xl mx-auto text-sm sm:text-base"
           >
-            A diverse toolkit spanning databases, business intelligence, data engineering, programming, frameworks, and design tools.
+            Technologies and concepts I have applied in academic and personal projects, with a primary focus on ETL, data warehousing, and business intelligence.
           </motion.p>
         </div>
 
         {/* Skills Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {categories.map((cat, idx) => {
+          {categories.map((cat: typeof categories[number], idx: number) => {
             const Icon = cat.icon;
             return (
               <motion.div
@@ -103,7 +109,7 @@ export default function Skills() {
 
                 {/* Skill Tags */}
                 <div className="flex flex-wrap gap-2">
-                  {cat.skills.map((skill) => (
+                  {cat.skills.map((skill: string) => (
                     <span
                       key={skill}
                       className="px-3 py-1.5 text-xs rounded-lg bg-white/70 border border-slate-200 text-slate-700 font-medium hover:border-brand-indigo/20 hover:text-slate-900 transition-colors cursor-default"
