@@ -8,7 +8,7 @@ const certifications = [
     title: "Junior Web Programmer Certification",
     issuer: "BNSP (Badan Nasional Sertifikasi Profesi)",
     skills: ["HTML", "CSS", "JavaScript", "PHP"],
-    verifyUrl: "/certificates/bnsp-junior-web-programmer.pdf",
+    verifyUrl: "/bnsp-junior-web-programmer.pdf",
   },
   {
     title: "Learning Basic SQL",
@@ -27,6 +27,12 @@ const certifications = [
     issuer: "Dicoding Indonesia",
     skills: ["Python", "Data Analysis", "Statistics"],
     verifyUrl: "https://www.dicoding.com/certificates/07Z6W007RZQR",
+  },
+  {
+    title: "English Profeciency Test (EPT)",
+    issuer: "UPA Bahasa UPN Veteran Jawa Timur",
+    skills: ["English"],
+    verifyUrl: "/sertifikat-EPT.pdf",
   }
 ];
 
@@ -77,6 +83,13 @@ export default function Certifications() {
                   </div>
                   <a
                     href={cert.verifyUrl}
+                    download={
+                      cert.title === "Junior Web Programmer Certification"
+                        ? "bnsp-junior-web-programmer.pdf"
+                        : cert.title === "English Profeciency Test (EPT)"
+                          ? "sertifikat-EPT.pdf"
+                          : undefined
+                    }
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-1.5 rounded-md text-slate-500 hover:text-slate-900 hover:bg-sky-50 transition-colors"

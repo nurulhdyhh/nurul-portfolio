@@ -5,7 +5,9 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const roles = [
   "Data Engineer",
-  "BI Entusiast",
+  "ETL Developer",
+  "Data Warehouse Developer",
+  "Data Enthusiast",
 ];
 
 export default function Hero() {

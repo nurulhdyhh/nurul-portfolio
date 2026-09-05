@@ -8,6 +8,7 @@ import {
   Smartphone,
   BookOpen,
   Palette,
+  House,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -68,6 +69,23 @@ const projects: Project[] = [
     previewImage: "/usfurniture.png",
     previewAlt: "Sales dashboard preview",
     previewLabel: "Sales Dashboard Preview",
+  },
+  {
+    id: "house-price-prediction",
+    title: "House Price Prediction",
+    type: "Data Mining",
+    description:
+      "A data mining project that explores housing attributes and applies predictive modeling to estimate house prices.",
+    features: [
+      "Housing data exploration and preprocessing",
+      "Feature selection and engineering",
+      "Regression model training and evaluation",
+      "Price prediction from property characteristics",
+    ],
+    impact:
+      "Transformed housing data into a practical predictive model for supporting property price estimation.",
+    tech: ["Python", "Pandas", "Scikit-learn"],
+    previewLabel: "Prediction Model Preview",
   },
   {
     id: "easy-nutrition",
@@ -143,18 +161,21 @@ function ProjectPreview({ project }: { project: Project }) {
     "easy-nutrition": "from-sky-100 via-white to-rose-50",
     "doembah-laundry": "from-indigo-100 via-white to-sky-50",
     sibook: "from-amber-100 via-white to-slate-50",
+    "house-price-prediction": "from-emerald-100 via-white to-sky-50",
   };
 
   const iconMap: Record<string, React.ReactNode> = {
     "easy-nutrition": <Smartphone className="w-6 h-6 text-sky-500" />,
     "doembah-laundry": <Workflow className="w-6 h-6 text-sky-500" />,
     sibook: <BookOpen className="w-6 h-6 text-sky-500" />,
+    "house-price-prediction": <House className="w-6 h-6 text-emerald-600" />,
   };
 
   const badgeMap: Record<string, string> = {
     "easy-nutrition": "Figma Concept",
     "doembah-laundry": "App Flow",
     sibook: "System UI",
+    "house-price-prediction": "Regression Model",
   };
 
   return (
@@ -235,7 +256,7 @@ export default function FeaturedProject() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-slate-500 mt-4 max-w-xl mx-auto text-sm sm:text-base"
           >
-            A collection of projects spanning Business Intelligence, data analytics, mobile apps, UI/UX design, and web development.
+            A collection of projects spanning Business Intelligence, data mining, analytics, mobile apps, UI/UX design, and web development.
           </motion.p>
         </div>
 

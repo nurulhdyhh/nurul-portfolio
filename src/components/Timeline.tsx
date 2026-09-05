@@ -6,11 +6,11 @@ import { motion } from "framer-motion";
 const timelineData = [
   {
     type: "work",
-    role: "Business Intelligence Intern",
+    role: "Data Engineering / Data Warehouse Intern",
     company: "UPA TIK",
     duration: "2025",
     location: "Indonesia",
-    description: "Developed an end-to-end Business Intelligence solution to support analytical decision-making.",
+    description: "Developed an end-to-end Data Engineering / Data Warehouse solution to support analytical decision-making.",
     details: [
       "Designed Data Warehouse architecture using Kimball methodology",
       "Created fact and dimension table models",
