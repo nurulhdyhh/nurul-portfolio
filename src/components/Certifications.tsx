@@ -33,7 +33,13 @@ const certifications = [
     issuer: "UPA Bahasa UPN Veteran Jawa Timur",
     skills: ["English"],
     verifyUrl: "/sertifikat-EPT.pdf",
-  }
+  },
+  {
+    title: "Presenter - Perancangan Data Warehouse Kinerja Pengabdian Dosen Kepada Masyarakat Menggunakan Nine-step Kimball",
+    issuer: "3rd National Conference on Sinesia Foundation 2026",
+    skills: ["Data Warehouse", "Nine-step Kimball", "Presenter"],
+    verifyUrl: "/sertifikat-presenter.pdf",
+  },
 ];
 
 export default function Certifications() {
